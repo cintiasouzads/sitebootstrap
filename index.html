@@ -4,32 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Viagem dos Sonhos</title>
 </head>
 <body>
     <header>
       <nav>
         <ul>
-            <li>Pacotes</li>
-            <li>Taxas</li>
-            <li>Contato</li>
+            <li><a href="#">Pacotes</a></li>
+            <li><a href="#">Taxa</a></li>
+            <li><a href="#">Contato</a></li>
         </ul>
       </nav>  
       <h1>Venha realizar a viagem dos sonhos</h1>
     </header>
-    <section>
+    <section id="pacotes">
         <h2>Conheçam nossos pacotes</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, nisi optio adipisci facere odio vero libero doloremque blanditiis vel quibusdam repellendus recusandae exercitationem laboriosam atque quis, facilis tempora corporis repudiandae.
             <br><br>
             <a href="https://br.lipsum.com/feed/html"></a>
+            <hr>
         </p>
-        <hr>
-        <p>
+        <div class="figuras">
             <figure>
-                <img src="" alt="">
+                <img src="Imagens/nossos-pacotes/gramado.jpeg" alt="Imagem de chalé em Gramado">
+                <figcaption>Gramado</figcaption>
             </figure>
-        </p>
+            <figure>
+                <img src="Imagens/nossos-pacotes/porto-seguro.jpeg" alt="Imagem de Porto Seguro">
+                <figcaption>Porto Seguro</figcaption>
+            </figure>
+        
+            <figure>
+                <img src="Imagens/nossos-pacotes/rio-de-janeiro.jpeg" alt="Imagem da cidade do Rio de Janeiro">
+                <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+            </div>
+            <div class="videos">
+            <video controls width="500px">
+                <source src="" type="">
+                <source src="" type="">
+                Seu navegador não suporta o formato do vídeo. <a href="">Clique aqui</a>
+            </video>
+            </div>
     </section>
+    
+    <section>
+        <h2>Taxas de serviço</h2>
+        <table border>
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva do hotel</td>
+                    <td>R$ 500,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de carros</td>
+                    <td>R$300,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+
+         <fieldset>
+            <legend>Dados da viagem</legend>
+            <label>Nome</label><br>
+            <input type="text" name="nome"><br><br>
+
+            <label for="">Email</label><br>
+            <input type="email" required name="email"><br><br>
+
+            <label>Data de ida</label><br>
+         </fieldset>   
+        </form>
+    </section>
+
 </body>
 </html>
